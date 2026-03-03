@@ -1,0 +1,17 @@
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\MiniKindle501.KindleView.resources
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\MiniKindle501.csproj.GenerateResource.cache
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\MiniKindle501.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\MiniKindle501.AssemblyInfoInputs.cache
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\MiniKindle501.AssemblyInfo.cs
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\MiniKindle501.csproj.CoreCompileInputs.cache
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\MiniKindle501.sourcelink.json
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\bin\Debug\net10.0-windows\MiniKindle501.exe
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\bin\Debug\net10.0-windows\MiniKindle501.deps.json
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\bin\Debug\net10.0-windows\MiniKindle501.runtimeconfig.json
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\bin\Debug\net10.0-windows\MiniKindle501.dll
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\bin\Debug\net10.0-windows\MiniKindle501.pdb
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\MiniKindle501.dll
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\refint\MiniKindle501.dll
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\MiniKindle501.pdb
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\MiniKindle501.genruntimeconfig.cache
+C:\Users\hunte\source\repos\MiniKindle501\MiniKindle501\obj\Debug\net10.0-windows\ref\MiniKindle501.dll
