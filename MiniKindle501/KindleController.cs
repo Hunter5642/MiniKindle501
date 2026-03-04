@@ -20,14 +20,14 @@ namespace MiniKindle501
         public void HandleFlip(int dir)
         {
             model.GetCurrentBook().FlipPage(dir);
+            model.SyncFromBook();
             UpdateObs();
         }
-
         public void HandleAddBookmark()
         {
             if (ValidateBookmark())
             {
-                model.GetCurrentBook().AddRemBkmk(model.GetCurrentPage(), true, model.bookmarks);
+                model.GetCurrentBook().AddRemBkMk(model.GetCurrentPage(), true, model.bookmarks);
                 UpdateObs();
             }
             
@@ -36,7 +36,7 @@ namespace MiniKindle501
         {
             if (model.bookmarks.Contains(model.GetCurrentPage()))
             {
-                model.GetCurrentBook().AddRemBkmk(model.GetCurrentPage(), false, model.bookmarks);
+                model.GetCurrentBook().AddRemBkMk(model.GetCurrentPage(), false, model.bookmarks);
                 UpdateObs();
             }
         }

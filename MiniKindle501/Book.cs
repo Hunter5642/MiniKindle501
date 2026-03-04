@@ -6,18 +6,18 @@ namespace MiniKindle501
 {
     public class Book
     {
-        public int CurrentPage;
-        public List<string> Pages;
-        public string Author;
+        private int currentPage;
+        private List<string> pages;
+        private string author;
 
         public Book()
         {
-            CurrentPage = 0;
-            Pages = new List<String>();
-            Author = "";
+            currentPage = 0;
+            pages = new List<string>();
+            author = "";
         }
 
-        public void AddRemBkmk(int p, bool a, List<int> bookmarks)
+        public void AddRemBkMk(int p, bool a, List<int> bookmarks)
         {
             if (a)
             {
@@ -31,11 +31,18 @@ namespace MiniKindle501
 
         public void FlipPage(int dir)
         {
-            int newPage = CurrentPage + dir;
-            if (newPage >= 0 && newPage < Pages.Count)
+            int newPage = currentPage + dir;
+            if (newPage >= 0 && newPage < pages.Count)
             {
-                CurrentPage = newPage;
+                currentPage = newPage;
             }
         }
+
+        public int GetCurrentPage() { return currentPage; }
+        public int GetPageCount() { return pages.Count; }
+        public string GetPageText() { return pages[currentPage]; }
+        public string GetAuthor() { return author; }
+        public void SetAuthor(string a) { author = a; }
+        public void AddPage(string text) { pages.Add(text); }
     }
 }

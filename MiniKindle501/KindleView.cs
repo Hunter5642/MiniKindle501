@@ -19,15 +19,14 @@ namespace MiniKindle501
             InitializeComponent();
             UpdateGUI();
         }
-
-        // clear page, get current page, get bookmarks
+        
         public void UpdateGUI()
         {
             Book currentBook = model.GetCurrentBook();
 
-            pageTextLabel.Text = currentBook.Pages[currentBook.CurrentPage];
-            int pageNum = currentBook.CurrentPage + 1;
-            pageNumLabel.Text = "Page " + pageNum + " / " + currentBook.Pages.Count;
+            pageTextLabel.Text = model.CurrentPageText;
+            int pageNum = model.CurrentPage + 1;
+            pageNumLabel.Text = "Page " + pageNum + " / " + model.PageCount;
 
             UpdateBookmarkIndicator();
         }
@@ -46,24 +45,9 @@ namespace MiniKindle501
             }
         }
 
-        private void FlipBackbtn_Click(object sender, EventArgs e)
-        {
-            flipDel(-1);
-        }
-
-        private void FlipForbtn_Click(object sender, EventArgs e)
-        {
-            flipDel(1);
-        }
-
-        private void AddBkmkbtn_Click(object sender, EventArgs e)
-        {
-            addBkmkDel();
-        }
-
-        private void RemBkmarkbtn_Click(object sender, EventArgs e)
-        {
-            remBkmkDel();
-        }
+        private void FlipBackbtn_Click(object sender, EventArgs e) { flipDel(-1); }
+        private void FlipForbtn_Click(object sender, EventArgs e) { flipDel(1); }
+        private void AddBkmkbtn_Click(object sender, EventArgs e) { addBkmkDel(); }
+        private void RemBkmarkbtn_Click(object sender, EventArgs e) { remBkmkDel(); }
     }
 }

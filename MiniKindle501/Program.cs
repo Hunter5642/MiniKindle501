@@ -17,12 +17,12 @@ namespace MiniKindle501
             ApplicationConfiguration.Initialize();
 
             Book book = new Book();
-            book.Pages.Add("Welcome to MiniKindle!");
-            book.Pages.Add("This is page 2.");
-            book.Pages.Add("This is page 3.");
-            book.Pages.Add("This is page 4.");
-            book.Pages.Add("This is page 5.");
-            book.Pages.Add("This is page 6.");
+            book.AddPage("Welcome to MiniKindle!");
+            book.AddPage("This is page 2.");
+            book.AddPage("This is page 3.");
+            book.AddPage("This is page 4.");
+            book.AddPage("This is page 5.");
+            book.AddPage("This is page 6.");
 
             KindleModel model = new KindleModel(book);
             KindleController c = new KindleController(model);

@@ -8,6 +8,10 @@ namespace MiniKindle501
     {
         private Library library;
         private Book currentBook;
+
+        public int CurrentPage;
+        public int PageCount;
+        public string? CurrentPageText;
         public List<int> bookmarks;
 
         public KindleModel(Book b)
@@ -15,16 +19,18 @@ namespace MiniKindle501
             currentBook = b;
             bookmarks = new List<int>();
             library = new Library(new List<Book> { b });
+
+            SyncFromBook();
         }
 
-        public int GetCurrentPage()
+        public void SyncFromBook()
         {
-            return currentBook.CurrentPage;
+            CurrentPage = currentBook.GetCurrentPage();
+            PageCount = currentBook.GetPageCount();
+            CurrentPageText = currentBook.GetPageText();
         }
 
-        public Book GetCurrentBook()
-        {
-            return currentBook;
-        }
+        public int GetCurrentPage() { return CurrentPage; }
+        public Book GetCurrentBook() { return currentBook; }
     }
 }
