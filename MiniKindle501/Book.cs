@@ -41,8 +41,6 @@ namespace MiniKindle501
         public int GetCurrentPage() { return currentPage; }
         public int GetPageCount() { return pages.Count; }
         public string GetPageText() { return pages[currentPage]; }
-        public string GetAuthor() { return author; }
-        public void SetAuthor(string a) { author = a; }
         public void AddPage(string text) { pages.Add(text); }
     }
 }
